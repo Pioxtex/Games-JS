@@ -1,0 +1,38 @@
+body {background: url('../img/background.jpg') rgb(8,4,0) top center / 100% no-repeat;height: 100%;width: 99%;}
+#container > img {position:fixed; left:0; right:0; top:0; bottom:0; margin:auto; opacity:0.4;z-index:-1;}
+
+#punctation {width: 14%;background: rgba(0, 19, 49, 0.8);position: fixed;border-top-right-radius: 20px;border-bottom-right-radius: 20px;height: 100%;top: 0;left: 0;}
+#lifebuoy {display:inline-flex;width:15%; position:fixed; left:-10px; margin:7px;}
+#lifebuoy > div {margin-left:10px; margin-top:5px;}
+.fiftyfifty, .telephonefriend, .audience {cursor:pointer;border: 10px groove #1C6EA4;transform: scale(1,1);transition-timing-function: ease-out;transition-duration: 250ms;border-radius: 50%;background: rgba(0,0,0,0.5);}
+.fiftyfifty:hover, .telephonefriend:hover, .audience:hover {background:rgba(90, 97, 114, 0.5); transform: scale(1.05,1.07); transition-timing-function: ease-out; transition-duration: 250ms;}
+#used_fifty, #used_telephone, #used_audience {position: fixed;top: -4px;margin-left: 7px;color: red;font-size: 40px;font-weight: bold; display:none;}
+
+#tablePoints {font-weight: bold;position: fixed;top: 30%;font-size: 25px;}
+.nowWin {width: 189px;padding-right:14px;color:rgb(204, 51, 0);text-align:right;position: relative;left: 11px;}
+.nowWin > div {color: rgb(255,255,255);display: inline;margin-right: 8px;margin-left: 6px;}
+.quaranteed {color:rgb(255, 255, 255);}
+.active {border-radius: 10px !important;background: rgb(255, 153, 0) !important; transition-duration: 250ms;}
+
+#window_info {transform:scale(0,0);position:absolute; width:600px; height:400px; left:0; right:0; margin:auto; top:140px; z-index:2;background: rgb(255, 255, 255);border-radius: 20px;}
+#information {color:black;font-size:25px;text-align:center;padding-top:160px;font-weight:bold;z-index:3;}
+#information span {color:red;position:absolute;top:55%;font-size:90px;left:0;right:0;margin:auto;}
+
+#question {border: 5px groove #1C6EA4;bottom:40%; border-radius:20px; background:rgba(0,0,0,0.5); text-align:center; font-size:30px; color:whitesmoke; width:60%; position:absolute; left:0; right:0; margin:auto; padding-top:50px; padding-bottom:50px;}
+#answers {position:absolute; left:0; right:0; margin:auto; top:40%;}
+#answerA {left: -17%;top: 210px;right: 0;margin: auto;}
+#answerB {left: 17%;top: 115px;right: 0;margin: auto;}
+#answerC {left: -17%;top: 150px;right: 0;margin: auto;}
+#answerD {left: 17%;top: 55px;right: 0;margin: auto;}
+#answerA, #answerB, #answerC, #answerD {border-radius:20px; background:rgba(0,0,0,0.5); text-align:center; font-size:30px; color:whitesmoke; padding:20px; cursor:pointer; width:28%; position:relative; transform: scale(1,1); transition-timing-function: ease-out; transition-duration: 250ms;border: 10px groove #1C6EA4;border-radius: 40px 40px 40px 40px;}
+#answerA:hover, #answerB:hover, #answerC:hover, #answerD:hover {background:rgba(90, 97, 114, 0.5); transform: scale(1.05,1.07); transition-timing-function: ease-out; transition-duration: 250ms;}
+#answerA span, #answerB span, #answerC span, #answerD span {color:yellow;}
+
+#game, #punctation {display:none;}
+
+.start {border-radius: 25px;border: 10px groove #1C6EA4;background: rgba(0,0,0,0.9);height: 90px;width: 300px;text-align: center;padding-top: 30px;color: white;cursor: pointer;transform: scale(1,1);transition-timing-function: ease-out;transition-duration: 250ms;font-size: 40px;position: absolute;left: 0;right: 0;margin: auto;top: 0;bottom: 0;}
+.start:hover {background:rgba(90, 97, 114, 0.8); transform: scale(1.05,1.07); transition-timing-function: ease-out; transition-duration: 250ms;}
+.reset {visibility:hidden; border: 10px groove #1C6EA4;border-radius: 25px;background: rgba(0,0,0,0.5);height: 40px;width: 150px;text-align: center;padding-top: 5px;color: white;cursor: pointer;transform: scale(1,1);transition-timing-function: ease-out;transition-duration: 250ms;font-size: 25px;position: fixed;right: 10px;top: 10px;}
+.reset:hover {background:rgba(90, 97, 114, 0.5); transform: scale(1.05,1.07); transition-timing-function: ease-out; transition-duration: 250ms;}
+
+

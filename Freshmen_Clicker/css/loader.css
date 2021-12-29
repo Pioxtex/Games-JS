@@ -1,0 +1,154 @@
+/* loading */
+[data-name="loader"]
+{
+    display: none;
+}
+
+[data-name="container_loader"]
+{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes loading
+{
+    0%
+    {
+        font-size: 10vmin;
+    }
+    50% 
+    {
+        font-size: 5vmin;
+    }
+    100%
+    {
+        font-size: 10vmin;
+    }
+}
+
+.text_loading
+{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    line-height: 5;
+    text-shadow: 1px 1px black;
+    margin: auto;
+    text-align: center;
+    font-size: 10vmin;
+    font-weight: 900;
+    font-family: 'Stick', sans-serif;
+    animation: loading 4s infinite;
+}
+
+.container_loading
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.circles
+{
+    margin: auto;
+    display: flex;
+    animation: fadein 1s 0.75s ease-in;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+  
+.circle
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #4D2C71;
+    margin: 0 5px;
+}
+
+.circle:nth-child(1)
+{
+    animation: up 1s 0.25s infinite ease-in-out;
+}
+
+.circle:nth-child(1) > .inner-circle
+{
+    animation: rotate 1s 0.05s infinite;
+}
+.circle:nth-child(2)
+{
+    animation: up 1s 0.5s infinite ease-in-out;
+}
+
+.circle:nth-child(2) > .inner-circle
+{
+    animation: rotate 1s 0.1s infinite;
+}
+
+.circle:nth-child(3)
+{
+    animation: up 1s 0.75s infinite ease-in-out;
+}
+
+.circle:nth-child(3) > .inner-circle
+{
+    animation: rotate 1s 0.15s infinite;
+}
+  
+.part-cicle
+{
+    position: relative;
+    top: 7.5px;
+    width: 15px;
+    height: 15px;
+    background: #FF0000;
+}
+  
+.inner-circle
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #F3BB1C;
+    margin: 7.5px;
+    overflow: hidden;
+}
+  
+@keyframes rotate
+{
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadein
+{
+    from 
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes up
+{
+    0% 
+    {
+        transform: translate(0, 5px);
+    }
+    50%
+    {
+        transform: translate(0, -5px);
+    }
+    100% 
+    {
+        transform: translate(0, 5px);
+    }
+}
+/* end loading */

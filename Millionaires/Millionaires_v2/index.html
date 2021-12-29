@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MILLIONAIRES </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+
+
+<div id="millionaires_container">
+    <img src="img/millionaires_logo.png" class="millionaires_logo">
+    <div class="millionaires_title"><span>who want to be a millionaire</span></div>
+    <div class="millionaires_content">
+        <div class="millionaires_questions_answers_a">
+            <div class="millionaires_questions_answers">
+                <div id="questionText" class="millionaires_questions_display"><button id="millionaires_start">START</button></div>
+                <div class="millionaires_answers_choice">
+                    <div answer="A" class="millionaires_answers"><span class="millionaires_answer_text_1">A:</span><span answerText="A" class="millionaires_answer_text_2"></span></div>
+                    <div answer="B" class="millionaires_answers"><span class="millionaires_answer_text_1">B:</span><span answerText="B" class="millionaires_answer_text_2"></span></div>
+                    <div answer="C" class="millionaires_answers"><span class="millionaires_answer_text_1">C:</span><span answerText="C" class="millionaires_answer_text_2"></span></div>
+                    <div answer="D" class="millionaires_answers"><span class="millionaires_answer_text_1">D:</span><span answerText="D" class="millionaires_answer_text_2"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="millionaires_score_points_lifebuoya_a">
+            <div class="millionaires_score_points_lifebuoya">
+                <div class="millionaires_lifebuoya_a">
+                    <div lifebuoya="1" class="millionaires_lifebuoya"><img src="img/lifebuoya1.png"></div>
+                    <div lifebuoya="2" class="millionaires_lifebuoya"><img src="img/lifebuoya2.png"></div>
+                    <div lifebuoya="3" class="millionaires_lifebuoya"><img src="img/lifebuoya3.png"></div>
+                </div>
+                <div class="millionaires_score"><span>Your Score: </span><span id="score">0</span><span>$</span></div>
+                <div class="millionaires_points">
+                    <div level="15" class="millionaires_point guaranteed"><span class="millionaires_point_text_1">15</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$MILLION</span></div>
+                    <div level="14" class="millionaires_point"><span class="millionaires_point_text_1">14</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$500'000</span></div>
+                    <div level="13" class="millionaires_point"><span class="millionaires_point_text_1">13</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$250'000</span></div>
+                    <div level="12" class="millionaires_point"><span class="millionaires_point_text_1">12</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$125'000</span></div>
+                    <div level="11" class="millionaires_point"><span class="millionaires_point_text_1">11</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$64'000</span></div>
+                    <div level="10" class="millionaires_point guaranteed"><span class="millionaires_point_text_1">10</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$32'000</span></div>
+                    <div level="9" class="millionaires_point"><span class="millionaires_point_text_1">9</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$16'000</span></div>
+                    <div level="8" class="millionaires_point"><span class="millionaires_point_text_1">8</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$8'000</span></div>
+                    <div level="7" class="millionaires_point"><span class="millionaires_point_text_1">7</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$4'000</span></div>
+                    <div level="6" class="millionaires_point"><span class="millionaires_point_text_1">6</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$2'000</span></div>
+                    <div level="5" class="millionaires_point guaranteed"><span class="millionaires_point_text_1">5</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$1'000</span></div>
+                    <div level="4" class="millionaires_point"><span class="millionaires_point_text_1">4</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$500</span></div>
+                    <div level="3" class="millionaires_point"><span class="millionaires_point_text_1">3</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$300</span></div>
+                    <div level="2" class="millionaires_point"><span class="millionaires_point_text_1">2</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$200</span></div>
+                    <div level="1" class="millionaires_point active guaranteed"><span class="millionaires_point_text_1">1</span><span class="millionaires_point_text_2">&#9830;</span><span class="millionaires_point_text_3">$100</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
