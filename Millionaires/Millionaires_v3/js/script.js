@@ -15,7 +15,8 @@ $(document).ready(function()
                 yellow: 'rgba(230, 230, 0, 0.9)',
                 green: 'rgba(0, 255, 0, 0.9)',
                 red: 'rgba(255, 0, 0, 0.9)',
-                winning_amount: new Array(0, 500, 1000, 2000, 5000, 10000, 20000, 40000, 75000, 125000, 250000, 500000, 1000000)
+                winning_amount: new Array(0, 500, 1000, 2000, 5000, 10000, 20000, 40000, 75000, 125000, 250000, 500000, 1000000),
+                number_questions: 12
             }
 
             let lvl = 1
@@ -71,7 +72,7 @@ $(document).ready(function()
             }
 
             let dat = JSON.parse( obj )
-            let drawn = random(16, dat.length)
+            let drawn = random(config.number_questions, dat.length)
 
             $('.debug').on('click', debug)
             $('.sound').on('click', mute)
@@ -254,7 +255,7 @@ $(document).ready(function()
                 $('[point]').removeClass('active')
                 $('[point="1"]').addClass('active')
                 lvl = 1
-                drawn = random(16, dat.length)
+                drawn = random(config.number_questions, dat.length)
 
                 $('.question').text('Welcome')
                 $('[answer="A"]').text('Player')
@@ -312,5 +313,3 @@ $(document).ready(function()
         }
     })
 })
-
-//https://grid.layoutit.com/
