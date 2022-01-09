@@ -1,6 +1,8 @@
 <?php
-//error_reporting(0);
-$link = @new mysqli('localhost', 'root', '', 'pioxtex');
+error_reporting(0);
+require_once 'config.php';
+
+$link = @new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 if ($link->connect_errno) { die('Connect Error: ' . $link->connect_errno); }
 
 $question_err = $answer_a_err = $answer_b_err = $answer_c_err = $answer_d_err = $correct_answer_err = "";

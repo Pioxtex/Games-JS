@@ -1,5 +1,7 @@
 <?php
-$link = @new mysqli('localhost', 'root', '', 'pioxtex');
+require_once 'config.php';
+
+$link = @new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 if ($link->connect_errno) { die('Connect Error: ' . $link->connect_errno); }
 
 $result = $link->query("SELECT * FROM `millionaires`");
