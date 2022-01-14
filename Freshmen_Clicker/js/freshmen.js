@@ -49,8 +49,8 @@ $(function()
                     if(data.score >= prince)
                     {
                         // todo: the process of buying an item
-                        data.autoClicker = data.autoClicker + value;
-                        data.score = data.score - prince;
+                        data.autoClicker = parseInt(data.autoClicker) + value;
+                        data.score = parseInt(data.score) - prince;
 
                         // todo: purchase record
                         if(item == 1) {data.shop1++;}
@@ -93,7 +93,7 @@ $(function()
                 const autoClicker_function = setInterval(() => 
                 {
                     update( data );
-                    if(data.autoClicker > 0){ data.score = parseFloat(data.score) + parseFloat(data.autoClicker); }
+                    if(data.autoClicker > 0){ data.score = parseInt(data.score) + parseInt(data.autoClicker); }
                 }, 5000)
             }
         });
