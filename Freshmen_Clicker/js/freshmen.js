@@ -1,3 +1,6 @@
+// kazdy zakup zwieksza cene o pare monet -> newcena = oldcena + {oldcena/4}     Zaokrąglić do całości
+
+
 $(function()
 {
     /** @param debug Variable for displaying errors and information */
@@ -53,22 +56,25 @@ $(function()
                         data.score = parseInt(data.score) - prince;
 
                         // todo: purchase record
-                        if(item == 1) {data.shop1++;}
-                        if(item == 2) {data.shop2++;}
-                        if(item == 3) {data.shop3++;}
-                        if(item == 4) {data.shop4++;}
-                        if(item == 5) {data.shop5++;}
-                        if(item == 6) {data.shop6++;}
-                        if(item == 7) {data.shop7++;}
-                        if(item == 8) {data.shop8++;}
-                        if(item == 9) {data.shop9++;}
-                        if(item == 10) {data.shop10++;}
-                        if(item == 11) {data.shop11++;}
-                        if(item == 12) {data.shop12++;}
-                        if(item == 13) {data.shop13++;}
-                        if(item == 14) {data.shop14++;}
-                        if(item == 15) {data.shop15++;}
-                        if(item == 16) {data.shop16++;}
+                        switch(item)
+                        {
+                            case 1: data.shop1++; break;
+                            case 2: data.shop2++; break;
+                            case 3: data.shop3++; break;
+                            case 4: data.shop4++; break;
+                            case 5: data.shop5++; break;
+                            case 6: data.shop6++; break;
+                            case 7: data.shop7++; break;
+                            case 8: data.shop8++; break;
+                            case 9: data.shop9++; break;
+                            case 10: data.shop10++; break;
+                            case 11: data.shop11++; break;
+                            case 12: data.shop12++; break;
+                            case 13: data.shop13++; break;
+                            case 14: data.shop14++; break;
+                            case 15: data.shop15++; break;
+                            case 16: data.shop16++; break;
+                        }
 
                         update(data);
                         debug === true ? console.log('%c Shop:%c Shop successfully ->', 'color:rgb(20,255,20)', 'color:rgb(150, 150, 150)', 'prince:'+prince + ', value:'+value + ', score:'+data.score + ', autoClicker:'+data.autoClicker + ', id:'+item) : null;
